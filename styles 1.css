@@ -1,0 +1,100 @@
+/* =========================================================
+   STARTER STYLES — Web Design Club
+   This file is intentionally basic. It gives you layout and
+   spacing, but none of today's UX/UI concepts have been
+   applied yet. That's your job in the Polish Challenge:
+
+   - Typography  → pick a font pairing, set hierarchy/readability
+   - Graphics    → add a vector (SVG) graphic + an optimized raster image
+   - Feedback    → add :hover / :focus / :active states
+   - C.R.A.P.    → check contrast, repetition, alignment, proximity
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #eeeeee;
+}
+
+nav a {
+  margin-left: 16px;
+  color: #222;
+}
+
+.hero {
+  padding: 60px 24px;
+  text-align: center;
+  background: #dddddd;
+}
+
+.about {
+  display: flex;
+  gap: 24px;
+  padding: 40px 24px;
+}
+
+.about-text,
+.about-image {
+  flex: 1;
+}
+
+.image-placeholder {
+  background: #cccccc;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.meetings {
+  padding: 40px 24px;
+}
+
+.testimonials {
+  padding: 40px 24px;
+  background: #f5f5f5;
+}
+
+.signup {
+  padding: 40px 24px;
+}
+
+.signup form {
+  max-width: 300px;
+}
+
+.signup label {
+  display: block;
+  margin-top: 12px;
+}
+
+.signup input {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+.signup button {
+  margin-top: 16px;
+  padding: 8px 16px;
+}
+
+footer {
+  padding: 20px 24px;
+  text-align: center;
+  background: #eeeeee;
+}
