@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Design Club</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -28,7 +31,8 @@
       <p>We meet every week and work on websites, apps, and design projects. All skill levels are welcome — beginners are encouraged to stop by anytime, no experience necessary.</p>
     </div>
     <div class="about-image">
-      <div class="image-placeholder">photo placeholder</div>
+      <img class="about-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDyeJKMo6uIHUJs4vB5-S_7F0oCb9KVsPMOYYh6Ombw&s=10">
+      <img class="about-photo" src="C:\Users\webdev\Downloads\computer.png" alt="Computer">
     </div>
   </section>
 
@@ -39,6 +43,15 @@
       <li>Room 204</li>
       <li>3:15 PM</li>
     </ul>
+    <div class="meeting-actions">
+      <div class="rsvp-action">
+        <button id="rsvpBtn" type="button" onclick="handleRSVP()">RSVP for Next Meeting</button>
+      </div>
+      <div class="interest-action">
+        <p>Interested members: <span id="interestCount" aria-live="polite">0</span></p>
+        <button id="interestBtn" type="button" onclick="incrementInterest()">I'm Interested</button>
+      </div>
+    </div>
   </section>
 
   <section class="testimonials">
@@ -65,5 +78,6 @@
     <p>&copy; Web Design Club</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
