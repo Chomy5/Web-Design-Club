@@ -7,7 +7,7 @@ function handleRSVP() {
     return;
   }
 
-  const message = document.createElement("p");
+  let message = document.createElement("p");
   message.id = "rsvpConfirmation";
   message.classList.add("feedback-message");
   message.setAttribute("role", "status");
@@ -19,8 +19,8 @@ function handleRSVP() {
 
 // Update the displayed count whenever a visitor expresses interest.
 function incrementInterest() {
-  const countDisplay = document.getElementById("interestCount");
-  const currentCount = Number(countDisplay.textContent);
+  let countDisplay = document.getElementById("interestCount");
+  let currentCount = Number(countDisplay.textContent);
   countDisplay.textContent = String(currentCount + 1);
 }
 
