@@ -26,8 +26,8 @@ function incrementInterest() {
 
 /*
 Reflection
-1. I inserted a message into the page instead of using alert() so the
-   confirmation stays with the RSVP button and does not interrupt browsing.
+1. I put a message into the page instead of using alert() so the
+   confirmation stays with the RSVP button and does not mess with browsing.
    An alert would block the page and disappear from view when dismissed.
 2. The onclick event attribute calls handleRSVP() when the button is clicked.
    The function creates a paragraph with createElement(), fills it with
