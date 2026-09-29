@@ -86,6 +86,45 @@ nav a {
   padding: 40px 24px;
 }
 
+.meeting-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.rsvp-action,
+.interest-action {
+  min-width: 220px;
+}
+
+.interest-action p {
+  margin-top: 0;
+}
+
+.meeting-actions button {
+  padding: 10px 16px;
+  border: 1px solid #222;
+  border-radius: 6px;
+  background: #eeeeee;
+  color: #222;
+  font: inherit;
+  cursor: pointer;
+}
+
+.meeting-actions button:hover,
+.meeting-actions button:focus-visible {
+  background: #222;
+  color: #fff;
+}
+
+.feedback-message {
+  margin: 12px 0 0;
+  color: #245b3c;
+  font-weight: 700;
+}
+
 .testimonials {
   padding: 40px 24px;
   background: #f5f5f5;
